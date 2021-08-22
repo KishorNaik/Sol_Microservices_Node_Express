@@ -1,0 +1,3 @@
+CREATE DATABASE Users;
+
+USE Users;
