@@ -14,7 +14,7 @@ export class MySqlProvider implements IMySqlProvider{
        try
        {
             this.connection=await mysql.createConnection(mySqlConfig);
-
+            console.log("# Sql Connection Opened");
             return this.connection;
        }
        catch(ex){
@@ -28,6 +28,7 @@ export class MySqlProvider implements IMySqlProvider{
         try
         {   
             this.connection?.destroy();
+            console.log("# Sql Connection Closed");
             resolve();
         }
         catch(ex){
