@@ -61,6 +61,9 @@ npm install --save-dev http-proxy-middleware
 // helmet -> Helmet helps you secure your Express apps by setting various HTTP headers (Security)
 npm install --save-dev helmet
 
+// MySql Connector
+npm install --save-dev mysql2
+
 
 Step 3:
 Initialize TypeScript in Node.js, it will create tsconfig.json file
