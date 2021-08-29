@@ -24,6 +24,7 @@ export default class Startup{
         this.middlewareCollections.AddLogerMiddleware(this.app);
         this.middlewareCollections.AddCorsMiddleware(this.app);
         this.middlewareCollections.AddGZipCompressionMiddleware(this.app);
+        this.middlewareCollections.AddSecurityHeaderMiddleware(this.app);
 
         return this;
     }

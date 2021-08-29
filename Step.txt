@@ -55,6 +55,12 @@ npm install bcryptjs @types/bcryptjs
 // GZip Compression
 npm install --save-dev compression @types/compression
 
+// Http Proxy Middleware
+npm install --save-dev http-proxy-middleware
+
+// helmet -> Helmet helps you secure your Express apps by setting various HTTP headers (Security)
+npm install --save-dev helmet
+
 
 Step 3:
 Initialize TypeScript in Node.js, it will create tsconfig.json file
@@ -79,3 +85,14 @@ Step 5:
     OR
     type command
     npm run debug
+
+Step 6:
+Build and compile script. convert code .ts code .js and copy file to dist folder.
+ npm run ts-compile
+
+Step 7: Enable TCP/Ip for Sql Connection
+7.1
+Open 'Sql Server Configuration Manager'-> Select 'Sql Server Network Configuration' -> Select 'Protocol for MSSQLServer' -> SELECT 'TCP/IP' -> double click -> Select Option 'Enabled' -> Set as 'Yes';
+
+7.2 
+Go to 'Sql Server Service'-> Restart 'Sql Server'
